@@ -5,7 +5,7 @@ egpplXX.bi        : example input file<br>
 biabdAL           : executable file of the solver (for Ubuntu)<br>
 <br>
 <b>[Usage]</b><br>
-./biabdAL -f FILE [-balimit NUM|-debug]<br>
+./biabdAL -f FILE [-balimit NUM|-nooutput|-debug]<br>
 <br>
 <b>[Options]</b><br>
   -balimit NUM  : set limit number of iteration (default: -1 (nolimit))<br>
