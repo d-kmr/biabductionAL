@@ -1,0 +1,7 @@
+Biabduction Query:
+P: True
+A: t -> (*:0) * Arr(t, t)
+B: Arr(a, b)
+
+
+No Answer

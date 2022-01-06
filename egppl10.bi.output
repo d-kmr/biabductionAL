@@ -1,0 +1,15 @@
+Biabduction Query:
+P: True
+A: a+1 -> (*:3) * Ls(a,b)
+B: Arr(a, a+4)
+
+
+Biabduction Answer(s)
+- Answer 0
+P0: a =/ b
+P1: a = b
+P: P0|P1
+X: Arr(a, a) * Arr(a+2, a+4)
+Y: Ls(a,b)
+- GiveUp
+None

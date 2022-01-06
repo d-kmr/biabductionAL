@@ -1,0 +1,15 @@
+Biabduction Query:
+P: True
+A: t -> (*:0)
+B: Ls(t,u)
+
+
+Biabduction Answer(s)
+- Answer 0
+P0: t = u
+P1: t =/ u
+P: P0|P1
+X: Ls(t,u)
+Y: t -> (*:0)
+- GiveUp
+None

@@ -1,0 +1,35 @@
+Biabduction Query:
+P: True
+A: a -> (next:a+1) * a+1 -> (next:a+2) * a+2 -> (next:a+3) * a+3 -> (next:0) * Arr(a+4, a+9)
+B: Ls(p,q) * q -> (next:0)
+
+
+Biabduction Answer(s)
+- Answer 0
+P0: q =/ a+3 & q =/ a+2 & q =/ a+1 & p =/ a+3 & p =/ a+2 & p =/ a+1 & p =/ q & a =/ q & a =/ p
+P1: q =/ a+3 & q =/ a+2 & q =/ a+1 & p =/ a+3 & p =/ a+2 & p =/ a+1 & p = q & a =/ q & a =/ p & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p)
+P: P0|P1
+X: q -> (next:0) * Ls(p,q)
+Y: a+3 -> (next:0) * a -> (next:a+1) * a+1 -> (next:a+2) * a+2 -> (next:a+3) * Arr(a+4, a+9)
+- Answer 1
+P: q = (a+3) & q =/ a+2 & q =/ a+1 & p =/ a+3 & p =/ a+2 & p =/ a+1 & p =/ q & a =/ q & a = p & (q =/ a+3 | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a =/ p) & (q = (a+3) | q = (a+2) | q = (a+1) | p =/ a+3 | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p =/ a+1 | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p =/ a+2 | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p =/ q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p)
+X: Emp
+Y: Arr(a+4, a+9)
+- Answer 2
+P: q = (a+3) & q =/ a+2 & q =/ a+1 & p =/ a+3 & p = (a+2) & p =/ a+1 & p =/ q & a =/ q & a =/ p & (q =/ a+3 | q = (a+2) | q = (a+1) | p =/ a+3 | p = (a+2) | p = (a+1) | p =/ q | a = q | a = p) & (q =/ a+3 | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a =/ p) & (q =/ a+3 | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a =/ p) & (q = (a+3) | q = (a+2) | q = (a+1) | p =/ a+3 | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p =/ a+1 | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p =/ a+2 | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p =/ q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p)
+X: Emp
+Y: a -> (next:a+1) * a+1 -> (next:a+2) * Arr(a+4, a+9)
+- Answer 3
+P: q = (a+3) & q =/ a+2 & q =/ a+1 & p =/ a+3 & p =/ a+2 & p = (a+1) & p =/ q & a =/ q & a =/ p & (q =/ a+3 | q = (a+2) | q = (a+1) | p = (a+3) | p =/ a+2 | p = (a+1) | p = q | a = q | a = p) & (q =/ a+3 | q = (a+2) | q = (a+1) | p =/ a+3 | p = (a+2) | p = (a+1) | p =/ q | a = q | a = p) & (q =/ a+3 | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a =/ p) & (q =/ a+3 | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a =/ p) & (q = (a+3) | q = (a+2) | q = (a+1) | p =/ a+3 | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p =/ a+1 | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p =/ a+2 | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p =/ q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p)
+X: Emp
+Y: a -> (next:a+1) * Arr(a+4, a+9)
+- Answer 4
+P: q = (a+3) & q =/ a+2 & q =/ a+1 & p = (a+3) & p =/ a+2 & p =/ a+1 & p = q & a =/ q & a =/ p & (q =/ a+3 | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a =/ p) & (q =/ a+3 | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a =/ p) & (q = (a+3) | q = (a+2) | q = (a+1) | p =/ a+3 | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p =/ a+1 | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p =/ a+2 | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p =/ q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p)
+X: Emp
+Y: a -> (next:a+1) * a+1 -> (next:a+2) * a+2 -> (next:a+3) * Arr(a+4, a+9)
+- Answer 5
+P: q = (a+3) & q =/ a+2 & q =/ a+1 & p =/ a+3 & p =/ a+2 & p =/ a+1 & p =/ q & a =/ q & a =/ p & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a =/ p) & (q = (a+3) | q = (a+2) | q = (a+1) | p =/ a+3 | p = (a+2) | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p =/ a+1 | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p =/ a+2 | p = (a+1) | p = q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p =/ q | a = q | a = p) & (q = (a+3) | q = (a+2) | q = (a+1) | p = (a+3) | p = (a+2) | p = (a+1) | p = q | a = q | a = p)
+X: Ls(p,q)
+Y: a -> (next:a+1) * a+1 -> (next:a+2) * a+2 -> (next:a+3) * Arr(a+4, a+9)
+- GiveUp
+None

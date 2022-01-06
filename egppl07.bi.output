@@ -1,0 +1,7 @@
+Biabduction Query:
+P: t =/ u
+A: t -> (*:0)
+B: Ls(t,u)
+
+
+No Answer

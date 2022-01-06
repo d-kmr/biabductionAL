@@ -1,0 +1,21 @@
+Biabduction Query:
+P: True
+A: t -> (*:0)
+B: Arr(a, b) * Arr(t, t)
+
+
+Biabduction Answer(s)
+- Answer 0
+P0: (t+1) < b & a = (t+1) & t < a
+P1: (a <= t | a =/ t+1 | b <= (t+1)) & b < t & t = (b+1) & a < b
+P2: (b <= a | t <= b | t =/ b+1 | t <= b) & (a <= t | a =/ t+1 | b <= (t+1)) & a < b & (t+1) < a
+P3: (a <= (t+1) | b <= a) & (b <= a | t <= b | t =/ b+1 | t <= b) & (a <= t | a =/ t+1 | b <= (t+1)) & a = b & (t+1) < a
+P4: (a <= (t+1) | a =/ b) & (a <= (t+1) | b <= a) & (b <= a | t <= b | t =/ b+1 | t <= b) & (a <= t | a =/ t+1 | b <= (t+1)) & (b+1) < t & a < b
+P5: (b <= a | t <= (b+1)) & (a <= (t+1) | a =/ b) & (a <= (t+1) | b <= a) & (b <= a | t <= b | t =/ b+1 | t <= b) & (a <= t | a =/ t+1 | b <= (t+1)) & (b+1) < t & a = b
+P6: (a =/ b | t <= (b+1)) & (b <= a | t <= (b+1)) & (a <= (t+1) | a =/ b) & (a <= (t+1) | b <= a) & (b <= a | t <= b | t =/ b+1 | t <= b) & (a <= t | a =/ t+1 | b <= (t+1)) & t < b & b = (t+1) & a = b & t < a
+P7: (a <= t | a =/ b | b =/ t+1 | b <= t) & (a =/ b | t <= (b+1)) & (b <= a | t <= (b+1)) & (a <= (t+1) | a =/ b) & (a <= (t+1) | b <= a) & (b <= a | t <= b | t =/ b+1 | t <= b) & (a <= t | a =/ t+1 | b <= (t+1)) & b < t & t = (b+1) & a = b
+P: P0|P1|P2|P3|P4|P5|P6|P7
+X: Arr(a, b)
+Y: Emp
+- GiveUp
+None

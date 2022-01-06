@@ -1,0 +1,27 @@
+Biabduction Query:
+P: True
+A: Ls(x,y)
+B: Ls(x,b)
+
+
+Biabduction Answer(s)
+- Answer 0
+P: x =/ y & b =/ y & b =/ x
+X: Ls(y,b)
+Y: Emp
+- Answer 1
+P: x =/ y & b =/ y & b = x & (x =/ y | b = y | b = x) & (x = y | b =/ y | b = x) & (x = y | b = y | b = x)
+X: Emp
+Y: Ls(x,y)
+- Answer 2
+P0: x = y & b =/ y & b =/ x & (x = y | b =/ y | b = x) & (x = y | b = y | b = x)
+P1: x = y & b = y & b = x & (x = y | b = y | b =/ x) & (x =/ y | b = y | b = x) & (x = y | b =/ y | b = x) & (x = y | b = y | b = x)
+P: P0|P1
+X: Ls(x,b)
+Y: Emp
+- Answer 3
+P: x =/ y & b = y & b =/ x & (x = y | b = y | b = x)
+X: Emp
+Y: Emp
+- GiveUp
+None

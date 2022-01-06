@@ -1,0 +1,13 @@
+Biabduction Query:
+P: True
+A: Emp
+B: Ls(x,z)
+
+
+Biabduction Answer(s)
+- Answer 0
+P: True
+X: Ls(x,z)
+Y: Emp
+- GiveUp
+False

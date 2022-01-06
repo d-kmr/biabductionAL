@@ -1,0 +1,21 @@
+Biabduction Query:
+P: True
+A: t -> (*:0)
+B: Arr(t, t) * Arr(x, y)
+
+
+Biabduction Answer(s)
+- Answer 0
+P0: (y+1) < t & x < y
+P1: (y <= x | t <= (y+1)) & (y+1) < t & x = y
+P2: (x =/ y | t <= (y+1)) & (y <= x | t <= (y+1)) & x < y & (t+1) < x
+P3: (x <= (t+1) | y <= x) & (x =/ y | t <= (y+1)) & (y <= x | t <= (y+1)) & x = y & (t+1) < x
+P4: (x <= (t+1) | x =/ y) & (x <= (t+1) | y <= x) & (x =/ y | t <= (y+1)) & (y <= x | t <= (y+1)) & (t+1) < y & x = (t+1) & t < x
+P5: (x <= t | x =/ t+1 | y <= (t+1)) & (x <= (t+1) | x =/ y) & (x <= (t+1) | y <= x) & (x =/ y | t <= (y+1)) & (y <= x | t <= (y+1)) & y < t & t = (y+1) & x < y
+P6: (y <= x | t <= y | t =/ y+1 | t <= y) & (x <= t | x =/ t+1 | y <= (t+1)) & (x <= (t+1) | x =/ y) & (x <= (t+1) | y <= x) & (x =/ y | t <= (y+1)) & (y <= x | t <= (y+1)) & y < t & t = (y+1) & x = y
+P7: (x =/ y | t <= y | t =/ y+1 | t <= y) & (y <= x | t <= y | t =/ y+1 | t <= y) & (x <= t | x =/ t+1 | y <= (t+1)) & (x <= (t+1) | x =/ y) & (x <= (t+1) | y <= x) & (x =/ y | t <= (y+1)) & (y <= x | t <= (y+1)) & t < y & y = (t+1) & x = y & t < x
+P: P0|P1|P2|P3|P4|P5|P6|P7
+X: Arr(x, y)
+Y: Emp
+- GiveUp
+None
