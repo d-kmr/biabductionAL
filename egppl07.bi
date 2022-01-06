@@ -7,10 +7,11 @@
 // (symb.heap) SH := P "&&" S
 // (biabd.query) e := SH "|-" S
 
-// no answer
+// # of terms in Array part: 0
+// # of terms in List  part: 4
+// # of solutions: 11
+// time: 0.243
 
-t <> u
-&&
-t -> (*:0)
+Ls(a,b) * Ls(c,d) * Ls(d,a)
 |-
-Ls(t,u)
+Ls(b,c)

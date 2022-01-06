@@ -7,8 +7,11 @@
 // (symb.heap) SH := P "&&" S
 // (biabd.query) e := SH "|-" S
 
-// has solution (t -> (*:0) * [Ls(t,u)] |= Ls(t,u) * [t -> (*:0)] is ok)
+// # of terms in Array part: 0
+// # of terms in List  part: 3
+// # of solutions: 5
+// time: 0.123
 
-t -> (*:0)
+Ls(a,b) * Ls(c,a)
 |-
-Ls(t,u)
+Ls(b,c)

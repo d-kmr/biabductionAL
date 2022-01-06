@@ -2,7 +2,6 @@
 
 <b>[Contents]</b><br>
 egpplXX.bi        : example input file<br>
-egpplXX.bi.output : output for egpplXX.bi from the solver<br> 
 biabdAL           : executable file of the solver (for Ubuntu)<br>
 <br>
 <b>[Usage]</b><br>
@@ -10,5 +9,7 @@ biabdAL           : executable file of the solver (for Ubuntu)<br>
 <br>
 <b>[Options]</b><br>
   -balimit NUM  : set limit number of iteration (default: -1 (nolimit))<br>
+  -nooutput     : avoid showing solutions (only shows the number of solutions)<br>
   -debug          : show detailed outputs<br>
+  
 

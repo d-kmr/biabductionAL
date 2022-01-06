@@ -7,11 +7,9 @@
 // (symb.heap) SH := P "&&" S
 // (biabd.query) e := SH "|-" S
 
-// # of terms in Array part: 4
-// # of terms in List  part: 0
-// # of solutions: 10
-// time: 1.471
+// F(p,q,r,s) := a0->(a1*a2->a3*..*a(m-1)->am * Arr() |- ->() * Ls(b0,b1) * .. * Ls(b(n-1),bn)
+// F(2,1)
 
-Arr(a,b) 
+a0 -> (next: a1)
 |-
-Arr(x,y)
+Ls(b0, b1)

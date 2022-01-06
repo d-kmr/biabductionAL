@@ -1,7 +1,0 @@
-Biabduction Query:
-P: True
-A: t -> (*:0) * Arr(a, b)
-B: t -> (*:3)
-
-
-No Answer

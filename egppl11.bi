@@ -7,6 +7,14 @@
 // (symb.heap) SH := P "&&" S
 // (biabd.query) e := SH "|-" S
 
-t -> (*:0)
+// egppl01 + egppl06
+// # of terms in Array part: 3
+// # of terms in List  part: 3
+// # of solutions: 10
+// time: 0.291
+
+Arr(t,b) * Ls(a',b') * Ls(c',a')
 |-
-Arr(t,t) * Arr(x,y)
+Arr(a,b) * Arr(t,t) * Ls(b',c')
+
+
