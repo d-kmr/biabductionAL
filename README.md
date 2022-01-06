@@ -1,6 +1,6 @@
 # Biabduction solver for Symbolic Heap Separation Logic with Arrays and Lists
 
-[Contents]
+[Contents]<br>
 egpplXX.bi       : example input file
 egpplXX.bi.output: output for egpplXX.bi from the solver 
 biabd            : executable file of the solver (for Ubuntu)
