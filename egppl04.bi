@@ -9,8 +9,14 @@
 
 // # of terms in Array part: 6
 // # of terms in List  part: 0
-// # of solutions: 16
-// time: 11.669
+
+// limit: none
+// # of solutions: 31
+// time: 21.838
+
+// limit: 10
+// # of solutions: 6
+// time: 0.361
 
 Arr(a,b) * Arr(c,d)
 |-

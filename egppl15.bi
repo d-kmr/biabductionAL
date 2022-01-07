@@ -10,8 +10,15 @@
 // egppl05 + egppl10
 // # of terms in Array part: 7
 // # of terms in List  part: 7
+
+// limit: none
 // # of solutions: ??
 // time: >300
+
+// limit: 10
+// # of solutions: 15
+// time: 0.769
+
 
 Arr(a,b) * Arr(c,d) * Arr(z,z) * Ls(a',b') * Ls(c',d') * Ls(e',a')
 |-

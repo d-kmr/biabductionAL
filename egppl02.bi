@@ -9,8 +9,14 @@
 
 // # of terms in Array part: 4
 // # of terms in List  part: 0
+
+// limit: none
 // # of solutions: 10
 // time: 1.471
+
+// limit: 10
+// # of solutions: 5
+// time: 0.191
 
 Arr(a,b) 
 |-
