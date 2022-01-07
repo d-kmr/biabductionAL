@@ -2,7 +2,7 @@
 
 <b>[Contents]</b><br>
 egppl??.bi        : example input files<br>
-egpplF??.bi       : example input files mechanically generated from SLAC program analyzer<br>
+egpplF??.bi       : example input files mechanically generated in the program analyzer SLAC<br>
 biabdAL           : executable file of the solver (for Ubuntu)<br>
 
 <b>[Requirements for biabdAL]</b><br>
