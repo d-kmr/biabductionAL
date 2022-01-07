@@ -5,7 +5,7 @@ egppl??.bi        : example input files<br>
 egpplF??.bi       : example input files mechanically generated from SLAC program analyzer<br>
 biabdAL           : executable file of the solver (for Ubuntu)<br>
 
-<b>[Requirements]</b><br>
+<b>[Requirements for biabdAL]</b><br>
 - Ubuntu family OS (Ubuntu, Linux Mint, etc)<br>
 - dependencies: linux-vdso, libstdc++, libgmp, libpthread, libm, libdl, libgcc_s, libc<br>
 <br>
