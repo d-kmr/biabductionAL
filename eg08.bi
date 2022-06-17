@@ -10,15 +10,6 @@
 // # of terms in Array part: 0
 // # of terms in List  part: 5
 
-// limit: none
-// # of solutions: 16
-// time: 0.565
-
-// limit: 10
-// # of solutions: 1
-// time: 0.137
-
-
 Ls(a,b) * Ls(c,d) * Ls(d,a)
 |-
 Ls(b,c) * Ls(a,x)

@@ -10,14 +10,6 @@
 // # of terms in Array part: 0
 // # of terms in List  part: 3
 
-// limit: none
-// # of solutions: 5
-// time: 0.102
-
-// limit: 10
-// # of solutions: 5
-// time: 0.095
-
 Ls(a,b) * Ls(c,a)
 |-
 Ls(b,c)

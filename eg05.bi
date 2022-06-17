@@ -10,14 +10,6 @@
 // # of terms in Array part: 7
 // # of terms in List  part: 0
 
-// limit: none
-// # of solutions: XX
-// time: >300 (limit: none)
-
-// limit: 10
-// # of solutions: 5
-// time: 0.264
-
 Arr(a,b) * Arr(c,d) * Arr(z,z)
 |-
 Arr(a,c) * Arr(x,y)

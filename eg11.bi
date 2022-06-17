@@ -11,15 +11,6 @@
 // # of terms in Array part: 3
 // # of terms in List  part: 3
 
-// limit: none
-// # of solutions: 10
-// time: 0.291
-
-// limit: 10
-// # of solutions: 10
-// time: 0.245
-
-
 Arr(t,b) * Ls(a',b') * Ls(c',a')
 |-
 Arr(a,b) * Arr(t,t) * Ls(b',c')

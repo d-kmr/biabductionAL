@@ -11,15 +11,6 @@
 // # of terms in Array part: 6
 // # of terms in List  part: 6
 
-// limit: none
-// # of solutions: 416
-// time: 64.38
-
-// limit: 10
-// # of solutions: 25
-// time: 0.731
-
-
 Arr(a,b) * Arr(c,d) * Ls(a',b') * Ls(c',d') * Ls(d',a')
 |-
 Arr(a,c) * Arr(x,y) * Ls(b',c') * Ls(x',y')
