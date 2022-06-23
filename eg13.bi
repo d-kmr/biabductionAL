@@ -12,7 +12,7 @@
 // # of terms in List  part: 5
 
 
-Arr(a,b) * Arr(c,c) * Ls(a',b') * Ls(c',d') * Ls(d',a')
+Arr(a,b) * Arr(c,d) * Ls(a',b') * Ls(c',d') * Ls(d',a')
 |-
-Arr(x,y) * Ls(b',c') * Ls(a',x')
+Arr(a,x) * Ls(b',c') * Ls(a',x')
 
