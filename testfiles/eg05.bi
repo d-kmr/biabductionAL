@@ -10,6 +10,6 @@
 // # of terms in Array part: 7
 // # of terms in List  part: 0
 
-Arr(a,b) * Arr(c,d) * Arr(z,z)
+Arr(a,b) * Arr(c,d) * Arr(z,y)
 |-
-Arr(a,c) * Arr(x,y)
+Arr(a,c) * Arr(x,x)

@@ -10,14 +10,6 @@ open BiabdArr
 open BiabdLs
    
                  
-(*
-メモ：2021.09.28
-biabd_core に繰り返し回数 (balimit) を追加
-biabdlimit の分だけ繰り返し実行して複数の解を生成 (2個くらいにしておくのが妥当？)
-example_tatsuta/eg6 で解が足りなかったため (eg28.bi)
-*)                 
-                 
-
 (* Pure extraction from QFSH *)
 let extractPureSS ss : P.t list =
   let _pp = ref [] in

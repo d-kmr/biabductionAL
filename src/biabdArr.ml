@@ -260,7 +260,6 @@ let biabdArrayOne pmodel (bq : BAquery.t) : BAanswer.t =
 (* balimit = maxLoop means no limit *)
 let biabductionArray balimit (bq: BAquery.t) : BAoutput.t =
   let headerAL = "[BiabductionARRAY] " in
-  let hardlimit = 280 in
   Ftools.pf_s tagDebug println_debug1 (headerAL ^ "Biabduction query:");
   Ftools.pf_s tagDebug BAquery.println bq;
   Ftools.pf_s tagDebug println_debug1 "";
@@ -275,7 +274,7 @@ let biabductionArray balimit (bq: BAquery.t) : BAoutput.t =
     Ftools.pf_s tagDebug2 println_debug2 (header ^ "biabductionArray.biabdA_iter is called");
     Ftools.pf_s tagDebug2 println_debug2 (header ^ "Accumulated Pure");
     Ftools.pf_s tagDebug2 P.println (P.mkAnd ppAcc);
-    if n = balimit || n = hardlimit
+    if n = balimit
     then
       (solL,ppAcc)
     else
