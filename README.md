@@ -1,19 +1,19 @@
 # Biabduction solver for Symbolic Heap Separation Logic with Arrays and Lists
 
 <b>[Contents]</b><br>
-build.sh          : build script of biabdAL
-src/              : source files of biabdAL
-egppl??.bi        : example input files (handwritten)<br>
-
-
-<b>[Requirements for biabdAL]</b><br>
-- Ubuntu family OS (Ubuntu, Linux Mint, etc)<br>
-- dependencies: linux-vdso, libstdc++, libgmp, libpthread, libm, libdl, libgcc_s, libc<br>
+<table>
+build.sh&#009;          : build script of biabdAL<br>
+src/              : source files of biabdAL<br>
+testfiles/        : example input files (handwritten)<br>
+slactestfiles/    : experimental files for SLAC<br>
+</table>
 <br>
+<b>[Requirements for build biabdAL]</b><br>
+- make<br>
+- opam (OCaml, ocamlopt, ocamlyacc, ocamllex, ocamlfind, z3-package, ANSITerminal-package)<br>
 <br>
 <b>[Build]</b><br>
 ./build.sh<br>
-<br>
 <br>
 <b>[Usage]</b><br>
 ./biabdAL -f FILE [-balimit NUM|-nooutput|-debug]<br>
