@@ -478,14 +478,13 @@ let biabdListOne pmodel (bq : BAquery.t) : BAanswer.t list =
 ;;  
 
 (* biabductionList finds several solutions *)
-(* balimit = maxLoop means no limit *)
 let biabductionList balimit (bq: BAquery.t) : BAoutput.t =
   Ftools.pf_s tagDebug println_debug1 "BiabdLs.biabdList is called";          
   let headerBL = "[BiabductionLIST] " in
   Ftools.pf_s tagDebug println_debug1 (headerBL ^ "Biabduction query");
   Ftools.pf_s tagDebug BAquery.println bq;
   let (pp_ex,pure,ss1,ss2) = bq in
-  let maxS = if balimit = maxLoop then "oo" else string_of_int balimit in
+  let maxS = if balimit = ml then "oo" else string_of_int balimit in
   let rec biabdL_iter n solL ppAcc =
     let header = Format.sprintf "[BiabdL_iter (%d/%s)] " (balimit-n) maxS in
     Ftools.pf_s tagDebug2 println_debug2 (header ^ "Accumulated Pure");

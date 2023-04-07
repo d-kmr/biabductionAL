@@ -27,7 +27,7 @@ let isValid_pb p =
   let q = allint' vv (mkExp_p p) in
   checkSatExpBool q
 ;;
-let maxLoop = 100000000 (* max of balimit *)
+let ml = 100000000
 ;;
 (* Extension of Brotherston's gamma *)
 (* It is for SH with arrays and lists *)

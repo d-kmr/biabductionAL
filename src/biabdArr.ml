@@ -257,14 +257,13 @@ let biabdArrayOne pmodel (bq : BAquery.t) : BAanswer.t =
 ;;  
 
 (* biabductionArray finds several solutions *)
-(* balimit = maxLoop means no limit *)
 let biabductionArray balimit (bq: BAquery.t) : BAoutput.t =
   let headerAL = "[BiabductionARRAY] " in
   Ftools.pf_s tagDebug println_debug1 (headerAL ^ "Biabduction query:");
   Ftools.pf_s tagDebug BAquery.println bq;
   Ftools.pf_s tagDebug println_debug1 "";
   let (pp_ex,pure,ss1,ss2) = bq in
-  let maxS = if balimit = maxLoop then "oo" else string_of_int balimit in
+  let maxS = if balimit = ml then "oo" else string_of_int balimit in
   let rec biabdA_iter n solL ppAcc =
     (*
     Format.printf "@[************************************@.";
